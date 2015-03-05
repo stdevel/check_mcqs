@@ -1,6 +1,10 @@
 #!/bin/sh
+
 # check_mcqs - check HP MC ServiceGuard quorum server state
 #
+# 2014 By Christian Stankowic
+# <info at stankowic hyphen development dot net>
+# https://github.com/stdevel
 #
 
 PATH_PLUGINS="/usr/lib64/nagios/plugins"
