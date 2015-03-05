@@ -23,13 +23,13 @@ fi
 #check whether the process is running
 if [ "$(ps -ef|grep /usr/local/qs/bin/qsc|grep -v grep)" == "" ]; then
 	echo "CRITICAL - HP ServiceGuard quorum server not running"
-	exit 1
+	exit 2
 fi
 
 #check whether the port tcp/1238 is accessable
 if [ "$($PATH_PLUGINS/check_tcp -p 1238 1>/dev/null 2>&1; echo $?)" != "0" ]; then
 	echo "CRITICAL - needed port tcp/1238 is not accessable!"
-	exit 1
+	exit 2
 fi
 
 #check whether needed hosts (parameters to this script) are in logfile (optional)
