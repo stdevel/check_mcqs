@@ -43,7 +43,7 @@ if [[ "$@" != "" ]]; then
 	if [ "$(echo $HOSTS_ONLINE|grep `echo $HOSTS`)" == "" ]; then
 		MISSING=`echo $HOSTS|sed "s/$HOSTS_ONLINE//g"|tr "," " "`
 		echo "CRITICAL - not all required cluster nodes are connected to quorum server! Missing: $MISSING"
-		exit 1
+		exit 2
 	fi
 fi
 
