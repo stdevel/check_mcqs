@@ -1,5 +1,5 @@
 Name:           nagios-plugins-check_mcqs
-Version:        1.0
+Version:        1.1
 Release:        1%{?dist}
 Summary:        A Nagios / Icinga plugin for checking HP MC/ServiceGuard quorum server states
 
@@ -52,5 +52,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Thu Jun 09 2015 Christian Stankowic <info@stankowic-development.net> - 1.1.1
+- Fixed wrong return code
+
 * Thu Mar 05 2015 Christian Stankowic <info@stankowic-development.net> - 1.0.1
 - First release
