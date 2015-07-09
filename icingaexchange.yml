@@ -8,11 +8,11 @@ type: Plugin
 license: gplv2
 releases: 
   - 
-    name: 1.0
-    description: "1.0 Release"
+    name: 1.1
+    description: "1.1 release"
     files: 
       - 
         name: check_mcqs.sh
         url: "file:///check_mcqs.sh"
-        description: "First release"
-        checksum: 2516c91cc27d411add2acbbb492c6e76
+        description: "1.1 release"
+        checksum: 2227313ba7640031ee97aa0954581933
