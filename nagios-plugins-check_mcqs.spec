@@ -10,7 +10,7 @@ Source0:        nagios-plugins-check_mcqs-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 #BuildRequires:
-Requires:       nagios-plugins-tcp nrpe
+Requires:       nagios-plugins-tcp
 
 %description
 This package contains a customized Nagios / Icinga plugin for checking HP MC/ServiceGuard quorum server states
